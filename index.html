@@ -50,39 +50,29 @@ header {
   padding: 10px 20px;
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #002244;
+  padding: 1rem 2rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: white;
+  font-size: 1.8rem;
   font-weight: bold;
-  font-size: 18px;
+  color: white;
 }
 
-.logo img {
-  margin-right: 10px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
+.nav-links a {
+  margin-left: 1rem;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 1.1rem;
 }
 
-.nav-links li a:hover {
-  color: #00d0ff;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 </style>
     
@@ -102,14 +92,15 @@ nav {
   </nav>
 </header>
     <header>
-        <h1>AlpTech HVAC</h1>
-        <nav>
-            <a href="#hakkimizda">Hakkımızda</a>
-            <a href="#hizmetler">Hizmetler</a>
-            <a href="#iletisim">İletişim</a>
-        </nav>
-    </header>
-
+  <nav class="navbar">
+    <div class="logo">AlpTech HVAC</div>
+    <div class="nav-links">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+  </nav>
+</header>
     <section>
         <h2>Her ortam için doğru iklim.</h2>
         <p>Profesyonel HVAC çözümleriyle konforunuzu garanti altına alıyoruz.</p>
