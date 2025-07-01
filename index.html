@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AlpTech HVAC</title>
     <style>
+         .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .card p {
+    margin: 10px 0 0;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .card-container {
+      flex-direction: column;
+    }
+
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+    <style>
         body {
             margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333;
         }
@@ -52,14 +89,26 @@
     </section>
 
     <section id="hizmetler">
-        <h2>Hizmetler</h2>
-        <ul>
-            <li>Merkezi Soğutma Sistemleri</li>
-            <li>Klima Montaj ve Bakımı</li>
-            <li>Endüstriyel Soğutma</li>
-            <li>Oda Termostat Sistemleri</li>
-        </ul>
-    </section>
+  <h2>Hizmetler</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Merkezi Soğutma Sistemleri</h3>
+      <p>Endüstriyel ve ticari alanlarda yüksek verimli merkezi sistem çözümleri.</p>
+    </div>
+    <div class="card">
+      <h3>Klima Montaj ve Bakımı</h3>
+      <p>Tüm marka modellerde klima kurulumu, periyodik bakım ve arıza onarımı.</p>
+    </div>
+    <div class="card">
+      <h3>Endüstriyel Soğutma</h3>
+      <p>Soğuk hava depoları, üretim hatları ve özel soğutma sistemleri kurulumu.</p>
+    </div>
+    <div class="card">
+      <h3>Oda Termostat Sistemleri</h3>
+      <p>Enerji tasarruflu, akıllı oda sıcaklık kontrol çözümleri.</p>
+    </div>
+  </div>
+</section>
 
     <section id="iletisim">
         <h2>İletişim</h2>
