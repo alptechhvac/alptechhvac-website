@@ -40,32 +40,52 @@
       flex: 1 1 100%;
     }
   }
-</style>
-    <style>
         body {
-            margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333;
-        }
-        header {
-            background-color: #002244; color: white; padding: 1rem 2rem;
-        }
-        nav a {
-            color: white; margin-right: 1rem; text-decoration: none;
-        }
-        section {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #002244; color: white; text-align: center; padding: 1rem;
-        }
-        .btn {
-            background-color: #0066cc; color: white; padding: 0.7rem 1.2rem;
-            border: none; border-radius: 4px; cursor: pointer;
-            text-decoration: none;
-        }
-        .whatsapp {
-            position: fixed; bottom: 20px; right: 20px;
-        }
-    </style>
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00d0ff;
+}
+</style>
+    
 </head>
 <body>
     <header>
